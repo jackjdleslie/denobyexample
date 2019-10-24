@@ -1,24 +1,15 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import getConfig from "next/config";
 import "./index.css";
 
-const { publicRuntimeConfig } = getConfig();
-
-const Home = () => {
-  const { found } = publicRuntimeConfig.examples;
-  const examples = found
-    .map(example => {
-      const matched = example.match(/(?<=\/)(.*?)(?=\.)/g);
-      return {
-        name: matched[0]
-          .replace("-", " ")
-          .replace(/\b(\w)/g, c => c.toUpperCase()),
-        path: matched[0]
-      };
-    })
-    .filter(example => example.name !== "Index");
+export default () => {
+  const examples = [
+    {
+      name: "Hello World",
+      path: "hello-world"
+    }
+  ];
 
   return (
     <div>
@@ -56,5 +47,3 @@ const Home = () => {
     </div>
   );
 };
-
-export default Home;
