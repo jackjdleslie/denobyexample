@@ -32,16 +32,27 @@ export default () => {
           <p>
             <i>Node.js by Example</i> is a hands-on introduction to JavaScript
             with Node.js using annotated example programs. Check out the{" "}
-            <Link href="hello-world">first example</Link> or browse the full
-            list below.
+            <Link href="hello-world">
+              <a>first example</a>
+            </Link>{" "}
+            or browse the full list below.
           </p>
           <ul>
             {examples.map(example => (
               <li key={example.name}>
-                <Link href={example.path}>{example.name}</Link>
+                <Link href={example.path}>
+                  <a>{example.name}</a>
+                </Link>
               </li>
             ))}
           </ul>
+          <p className="footer">
+            By <a href="https://jackleslie.dev">Jack Leslie</a> |{" "}
+            <a href="https://github.com/jackleslie/nodejsbyexample">source</a> |{" "}
+            <a href="https://github.com/jackleslie/nodejsbyexample#license">
+              licence
+            </a>
+          </p>
         </div>
       </div>
     </div>
