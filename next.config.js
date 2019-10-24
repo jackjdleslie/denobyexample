@@ -1,9 +1,9 @@
 const withCSS = require("@zeit/next-css");
-const examples = require("./examples.json");
+const fs = require("fs");
 
 module.exports = withCSS({
   cssModules: true,
-  serverRuntimeConfig: {
-    examples
+  publicRuntimeConfig: {
+    examples: fs.readdirSync(`${__dirname}/pages/examples`)
   }
 });

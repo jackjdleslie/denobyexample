@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout } from "../components";
+import { Layout } from "../../components";
 
 const code = `// hello-world.js
 var x = 12;

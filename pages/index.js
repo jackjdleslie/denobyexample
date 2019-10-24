@@ -1,7 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import fetch from "isomorphic-fetch";
+import getConfig from "next/config";
+const { publicRuntimeConfig } = getConfig();
 
 import { Header } from "../components";
 import styles from "./index.css";
@@ -27,7 +28,7 @@ const Index = ({ examples = [] }) => (
         <p>
           <i>Node.js by Example</i> is a hands-on introduction to JavaScript
           with Node.js using annotated example programs. Check out the{" "}
-          <Link href="hello-world">
+          <Link href="examples/hello-world">
             <a>first example</a>
           </Link>{" "}
           or browse the full list below.
@@ -54,8 +55,20 @@ const Index = ({ examples = [] }) => (
 );
 
 Index.getInitialProps = async () => {
-  const res = await fetch("http://localhost:3000/api/examples");
-  const examples = await res.json();
+  let { examples = [] } = publicRuntimeConfig;
+  examples = examples
+    .filter(example => example.endsWith(".js"))
+    .map(example => {
+      const short = example.substring(0, example.length - 3);
+      const name = short
+        .replace("-", " ")
+        .replace(/(^|\s)\S/g, l => l.toUpperCase());
+      return {
+        name,
+        slug: `examples/${short}`
+      };
+    });
+  console.log(examples);
   return { examples };
 };
 
