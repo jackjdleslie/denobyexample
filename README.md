@@ -1,4 +1,4 @@
-# Node.js by Example
+# `WIP` Node.js by Example
 
 > A website to teach Node.js and JavaScript through annotated examples
 
