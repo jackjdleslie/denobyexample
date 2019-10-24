@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui;
+}
+
+.inner {
+  max-width: 800px;
+}
+
+.example {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exampleCode,
+.exampleOutput {
+  width: 100%;
+}

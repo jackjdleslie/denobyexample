@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.titleLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  font-weight: normal;
+}
+
+.subtitle {
+  font-weight: normal;
+  color: gray;
+}
