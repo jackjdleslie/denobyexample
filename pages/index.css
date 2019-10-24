@@ -1,9 +1,14 @@
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .container {
   width: 100%;
   display: flex;
   justify-content: center;
-  color: #222222;
   font-family: system-ui;
+  color: #333333;
 }
 
 .column {
