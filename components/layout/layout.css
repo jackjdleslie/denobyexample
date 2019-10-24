@@ -4,15 +4,21 @@
   justify-content: center;
   align-items: center;
   font-family: system-ui;
+  color: #222222;
 }
 
 .inner {
   max-width: 800px;
+  width: 100%;
 }
 
 .example {
   display: flex;
   flex-wrap: wrap;
+}
+
+.exampleText {
+  margin-bottom: 10px;
 }
 
 .exampleCode,
