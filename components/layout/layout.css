@@ -25,3 +25,9 @@
 .exampleOutput {
   width: 100%;
 }
+
+.next {
+  margin-top: 10px;
+  width: 100%;
+  text-align: right;
+}

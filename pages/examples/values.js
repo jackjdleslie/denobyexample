@@ -1,18 +1,32 @@
 import React from "react";
 import { Layout } from "../../components";
 
-const code = `// hello-world.js
-console.log("hello world");
+const code = `// values.js
+
+// using addition (+) with strings concatenates them
+console.log("node" + "js");
+
+// you can print numbers directly to console without explicit type coercion
+console.log("1 + 1 =", 1+1);
+console.log("7.0 / 3.0 =", 7.0/3.0);
+
+// booleans work as expected
+console.log(true && false);
+console.log(true || false);
+console.log(!true);
 `;
 
-const output = `$ node hello-world.js
-hello world
+const output = `$ node values.js
+nodejs
+1 + 1 = 2
+7.0 / 3.0 = 2.3333333333333335
+false
+true
+false
 `;
-
-const next = { name: "Values", slug: "values" };
 
 export default () => (
-  <Layout title="Hello World" code={code} output={output} next={next}>
+  <Layout title="Values" code={code} output={output}>
     <p>
       The first program you should write is the traditional "hello world"
       program, which lets you get to grips with the execution environment as
