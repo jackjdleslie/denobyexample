@@ -1,3 +1,5 @@
 import Header from "./header/header";
 import Layout from "./layout/layout";
-export { Header, Layout };
+import Footer from "./footer/footer";
+
+export { Header, Layout, Footer };

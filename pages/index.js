@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
-import { Header } from "../components";
+import { Header, Footer } from "../components";
 import styles from "./index.css";
 
 const Index = ({ examples = [] }) => (
@@ -40,13 +40,13 @@ const Index = ({ examples = [] }) => (
             </li>
           ))}
         </ul>
-        <p className={styles.footer}>
+        <Footer>
           By <a href="https://jackleslie.dev">Jack Leslie</a> |{" "}
           <a href="https://github.com/jackleslie/nodejsbyexample">source</a> |{" "}
           <a href="https://github.com/jackleslie/nodejsbyexample#license">
             licence
           </a>
-        </p>
+        </Footer>
       </div>
     </div>
   </div>
