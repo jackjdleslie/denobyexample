@@ -1,8 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
-import getConfig from "next/config";
-const { publicRuntimeConfig } = getConfig();
 
 import { Header } from "../components";
 import styles from "./index.css";
@@ -55,8 +53,7 @@ const Index = ({ examples = [] }) => (
 );
 
 Index.getInitialProps = async () => {
-  let { examples = [] } = publicRuntimeConfig;
-  examples = examples
+  const examples = process.env.examples
     .filter(example => example.endsWith(".js"))
     .map(example => {
       const short = example.substring(0, example.length - 3);
@@ -68,7 +65,6 @@ Index.getInitialProps = async () => {
         slug: `examples/${short}`
       };
     });
-  console.log(examples);
   return { examples };
 };
 

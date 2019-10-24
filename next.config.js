@@ -3,7 +3,7 @@ const fs = require("fs");
 
 module.exports = withCSS({
   cssModules: true,
-  publicRuntimeConfig: {
+  env: {
     examples: fs.readdirSync(`${__dirname}/pages/examples`)
   }
 });
