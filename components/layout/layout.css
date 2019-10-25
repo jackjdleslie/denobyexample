@@ -1,6 +1,5 @@
 body {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 10px 20px 0px 20px;
 }
 
 .container {
@@ -40,6 +39,7 @@ body {
 p {
   margin-block-start: 0.3em;
   margin-block-end: 0.5em;
+  line-height: 1.4;
 }
 
 a {
