@@ -8,13 +8,13 @@ import styles from "./layout.css";
 export default ({ title, code, output, next, children }) => (
   <div>
     <Head>
-      <title>Node.js by Example - {title}</title>
+      <title>Node.js by Example{title ? ` - ${title}` : ""}</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <div className={styles.container}>
       <div className={styles.inner}>
-        <Header subtitle={title} />
+        <Header subtitle={title ? title : null} />
         <div className={styles.example}>
           <div className={styles.exampleText}>{children}</div>
           <div className={styles.exampleCode}>
