@@ -28,15 +28,15 @@ false
 export default () => (
   <Layout title="Values" code={code} output={output}>
     <p>
-      You might have heard that "everything" in JavaScript is an object - this
-      is not true. JavaScript has primitive types: <code>string</code>,{" "}
-      <code>number</code>, <code>boolean</code>, <code>null</code> and{" "}
+      JavaScript does not have typed <i>variables</i> - instead it has typed{" "}
+      <i>values</i> such as: <code>string</code>, <code>number</code>,{" "}
+      <code>boolean</code>, <code>object</code>, <code>null</code> and{" "}
       <code>undefined</code>.
     </p>
     <p>
       We will play about with <code>string</code>, <code>number</code> and{" "}
       <code>boolean</code> here and will go into more details about{" "}
-      <code>null</code> and <code>undefined</code> later.
+      <code>object</code>, <code>null</code> and <code>undefined</code> later.
     </p>
   </Layout>
 );
