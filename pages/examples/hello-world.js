@@ -11,8 +11,16 @@ hello world
 
 const next = { name: "Values", slug: "values" };
 
+const furtherReading = "https://nodejs.org/api/console.html#console_console";
+
 export default () => (
-  <Layout title="Hello World" code={code} output={output} next={next}>
+  <Layout
+    title="Hello World"
+    code={code}
+    output={output}
+    next={next}
+    furtherReading={furtherReading}
+  >
     <p>
       The first program you should write is the traditional "hello world"
       program, which lets you get to grips with the execution environment as

@@ -25,8 +25,18 @@ true
 false
 `;
 
+const next = { name: "Variables", slug: "variables" };
+
+const furtherReading = "https://javascript.info/types";
+
 export default () => (
-  <Layout title="Values" code={code} output={output}>
+  <Layout
+    title="Values"
+    code={code}
+    output={output}
+    next={next}
+    furtherReading={furtherReading}
+  >
     <p>
       JavaScript does not have typed <i>variables</i> - instead it has typed{" "}
       <i>values</i> such as: <code>string</code>, <code>number</code>,{" "}

@@ -5,7 +5,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { Header } from "..";
 import styles from "./layout.css";
 
-export default ({ title, code, output, next, children }) => (
+export default ({ title, code, output, furtherReading, next, children }) => (
   <div>
     <Head>
       <title>Node.js by Example{title ? ` - ${title}` : ""}</title>
@@ -23,13 +23,18 @@ export default ({ title, code, output, next, children }) => (
           <div className={styles.exampleOutput}>
             <SyntaxHighlighter language="bash">{output}</SyntaxHighlighter>
           </div>
-          {next ? (
-            <div className={styles.next}>
+          <div className={styles.extra}>
+            {furtherReading ? (
+              <a id="further-reading" href={furtherReading} target="_blank">
+                Further reading
+              </a>
+            ) : null}
+            {next ? (
               <Link href={next.slug}>
-                <a>{next.name} &rarr;</a>
+                <a id="next">{next.name} &rarr;</a>
               </Link>
-            </div>
-          ) : null}
+            ) : null}
+          </div>
         </div>
       </div>
     </div>
