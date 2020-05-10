@@ -8,8 +8,4 @@ A side project for me to learn more about Deno and JavaScript, inspired by [Go b
 
 ## Adding an example
 
-> Use `pages/examples/hello-world.js` as a guideline.
-
-1. Create a file in `pages/examples` - ensure that spaces are denoted with `-`.
-2. Default export a `Layout` component with `title`, `code`, `next` and `output` props.
-3. Write your example text as a child node of the `Layout`.
+Create a new `.mdx` file in the `pages/examples` folder [using frontmatter](https://www.gatsbyjs.org/docs/mdx/writing-pages/#using-frontmatter-in-mdx)
