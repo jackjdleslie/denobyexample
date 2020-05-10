@@ -2,13 +2,30 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint pages/**/*.jsx components/**/*.{js,jsx}",
+    "format": "npm run lint -- --fix"
   },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
     "next": "9.3.2",
+    "next-mdx-enhanced": "^2.5.0",
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-syntax-highlighter": "^11.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "husky": "^4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
   }
 }

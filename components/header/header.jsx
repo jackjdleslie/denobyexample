@@ -1,8 +1,8 @@
-import React from "react";
-import Link from "next/link";
-import styles from "./header.module.css";
+import React from 'react';
+import Link from 'next/link';
+import styles from './header.module.css';
 
-export default ({ title = "Deno by Example", subtitle = "" }) => (
+export default ({ title = 'Deno by Example', subtitle = '' }) => (
   <div className={styles.header}>
     <Link href="/">
       <a className={styles.titleLink}>

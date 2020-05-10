@@ -1,20 +1,25 @@
-import React from "react";
-import Link from "next/link";
-import Head from "next/head";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { Header } from "..";
-import styles from "./layout.module.css";
+import React from 'react';
+import Link from 'next/link';
+import Head from 'next/head';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import Header from '../header/header';
+import styles from './layout.module.css';
 
-export default ({ title, code, output, furtherReading, next, children }) => (
+export default ({
+  title, code, output, furtherReading, next, children,
+}) => (
   <div>
     <Head>
-      <title>Deno by Example{title ? ` - ${title}` : ""}</title>
+      <title>
+        Deno by Example
+        {title ? ` - ${title}` : ''}
+      </title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <div className={styles.container}>
       <div className={styles.inner}>
-        <Header subtitle={title ? title : null} />
+        <Header subtitle={title || null} />
         <div className={styles.example}>
           <div className={styles.exampleText}>{children}</div>
           <div className={styles.exampleCode}>
@@ -25,13 +30,17 @@ export default ({ title, code, output, furtherReading, next, children }) => (
           </div>
           <div className={styles.extra}>
             {furtherReading ? (
-              <a id="further-reading" href={furtherReading} target="_blank">
+              <a id="further-reading" href={furtherReading} target="_blank" rel="noopener noreferrer">
                 Further reading
               </a>
             ) : null}
             {next ? (
               <Link href={next.slug}>
-                <a id="next">{next.name} &rarr;</a>
+                <a id="next">
+                  {next.name}
+                  {' '}
+                  &rarr;
+                </a>
               </Link>
             ) : null}
           </div>

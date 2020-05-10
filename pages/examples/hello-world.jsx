@@ -1,5 +1,5 @@
-import React from "react";
-import { Layout } from "../../components";
+import React from 'react';
+import { Layout } from '../../components';
 
 const code = `// hello-world.js
 console.log("hello world");
@@ -9,9 +9,9 @@ const output = `$ node hello-world.js
 hello world
 `;
 
-const next = { name: "Values", slug: "values" };
+const next = { name: 'Values', slug: 'values' };
 
-const furtherReading = "https://nodejs.org/api/console.html#console_console";
+const furtherReading = 'https://nodejs.org/api/console.html#console_console';
 
 export default () => (
   <Layout
@@ -31,7 +31,11 @@ export default () => (
       points during a programs execution.
     </p>
     <p>
-      If you run <code>console.log</code> when writing JavaScript in the
+      If you run
+      {' '}
+      <code>console.log</code>
+      {' '}
+      when writing JavaScript in the
       browser, you would see the output in the browser's console. In Node.js, we
       will simply see the output in the terminal.
     </p>

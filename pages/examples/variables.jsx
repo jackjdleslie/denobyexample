@@ -1,5 +1,5 @@
-import React from "react";
-import { Layout } from "../../components";
+import React from 'react';
+import { Layout } from '../../components';
 
 const code = `// variables.js
 
@@ -36,8 +36,7 @@ route sixty-six
 route 66
 `;
 
-const furtherReading =
-  "https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/up%20%26%20going/ch2.md#values--types";
+const furtherReading = 'https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/up%20%26%20going/ch2.md#values--types';
 
 export default () => (
   <Layout
@@ -53,9 +52,15 @@ export default () => (
       type of value.
     </p>
     <p>
-      The keyword <code>var</code> declares one or more variables, and if you
-      don't explicitly assign a variable a value then its value is{" "}
-      <code>undefined</code>.
+      The keyword
+      {' '}
+      <code>var</code>
+      {' '}
+      declares one or more variables, and if you
+      don't explicitly assign a variable a value then its value is
+      {' '}
+      <code>undefined</code>
+      .
     </p>
   </Layout>
 );
