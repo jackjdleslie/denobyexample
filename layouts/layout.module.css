@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui;
+  color: #333333;
+}
+
+.inner {
+  max-width: 800px;
+  width: 100%;
+}
+
+.example {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exampleText {
+  margin-bottom: 10px;
+}
+
+.exampleCode,
+.exampleOutput {
+  width: 100%;
+}
+
+.extra {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.extra a:only-child {
+  margin-left: auto;
+}

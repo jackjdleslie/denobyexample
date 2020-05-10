@@ -1,0 +1,36 @@
+---
+layout: layout
+title: Values
+code: |
+  // values.js
+  
+  // string: using addition (+) with strings concatenates them
+  console.log("node" + "js");
+
+  // number: you can print numbers directly to console without explicit type coercion
+  console.log("1 + 1 =", 1+1);
+  console.log("7.0 / 3.0 =", 7.0/3.0);
+
+  // boolean: these work as expected
+  console.log(true && false);
+  console.log(true || false);
+  console.log(!true);
+output: |
+  $ deno run values.js
+  nodejs
+  1 + 1 = 2
+  7.0 / 3.0 = 2.3333333333333335
+  false
+  true
+  false
+furtherReading: https://javascript.info/types
+next:
+  name: Variables
+  slug: variables
+---
+
+JavaScript does not have typed _variables_ - instead it has typed _values_ such 
+as: `string`, `number`, `boolean`, `object`, `null` and `undefined`.
+
+We will play about with `string`, `number` and `boolean` here and will go into 
+more details about `object`, `null` and `undefined` later.

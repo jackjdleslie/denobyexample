@@ -53,7 +53,7 @@ const Index = ({ examples = [] }) => (
 
 Index.getInitialProps = async () => {
   const examples = process.env.examples
-    .filter((example) => example.endsWith('.jsx'))
+    .filter((example) => example.endsWith('.mdx'))
     .map((example) => {
       const short = example.substring(0, example.length - 4);
       const name = short
