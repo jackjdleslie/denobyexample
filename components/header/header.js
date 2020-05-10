@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import styles from "./header.css";
+import styles from "./header.module.css";
 
 export default ({ title = "Deno by Example", subtitle = "" }) => (
   <div className={styles.header}>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { Header } from "..";
-import styles from "./layout.css";
+import styles from "./layout.module.css";
 
 export default ({ title, code, output, furtherReading, next, children }) => (
   <div>
