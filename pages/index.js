@@ -9,7 +9,7 @@ console.log(process.env.NAME);
 console.log(process.env.GITHUB_USERNAME);
 `;
 
-const output = `$ node created-by.js
+const output = `$ deno run created-by.js
 Jack Leslie
 @jackleslie
 `;
@@ -19,14 +19,14 @@ const next = { name: "Hello World", slug: "examples/hello-world" };
 const Index = ({ examples = [] }) => (
   <Layout code={code} output={output} next={next}>
     <p>
-      <a href="https://nodejs.org">Node.js</a> is an open source{" "}
+      <a href="https://deno.land">Deno</a> is an open source{" "}
       <a href="https://developer.mozilla.org/docs/Web/JavaScript">JavaScript</a>{" "}
       runtime environment allowing the execution of JavaScript programs outside
       of the browser.
     </p>
     <p>
-      <i>Node.js by Example</i> is a hands-on introduction to JavaScript with
-      Node.js using annotated example programs. Check out the{" "}
+      <i>Deno by Example</i> is a hands-on introduction to JavaScript with
+      Deno using annotated example programs. Check out the{" "}
       <Link href="examples/hello-world">
         <a>first example</a>
       </Link>{" "}

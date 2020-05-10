@@ -8,7 +8,7 @@ import styles from "./layout.css";
 export default ({ title, code, output, furtherReading, next, children }) => (
   <div>
     <Head>
-      <title>Node.js by Example{title ? ` - ${title}` : ""}</title>
+      <title>Deno by Example{title ? ` - ${title}` : ""}</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 

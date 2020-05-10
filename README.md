@@ -1,10 +1,10 @@
-# `WIP` Node.js by Example
+# `WIP` Deno by Example
 
-> A website to teach Node.js and JavaScript through annotated examples.
+> A website to teach Deno and JavaScript through annotated examples.
 
 ## About
 
-A side project for me to learn more about Node.js and JavaScript, inspired by [Go by Example](https://gobyexample.com)
+A side project for me to learn more about Deno and JavaScript, inspired by [Go by Example](https://gobyexample.com)
 
 ## Adding an example
 

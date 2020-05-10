@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styles from "./header.css";
 
-export default ({ title = "Node.js by Example", subtitle = "" }) => (
+export default ({ title = "Deno by Example", subtitle = "" }) => (
   <div className={styles.header}>
     <Link href="/">
       <a className={styles.titleLink}>
