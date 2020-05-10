@@ -6,12 +6,12 @@ import { Layout } from "../components";
 
 const code = `// created-by.js
 console.log(process.env.NAME);
-console.log(process.env.GITHUB_USERNAME);
+console.log(process.env.URL);
 `;
 
 const output = `$ deno run created-by.js
 Jack Leslie
-@jackleslie
+jackleslie.dev
 `;
 
 const next = { name: "Hello World", slug: "examples/hello-world" };
@@ -50,8 +50,7 @@ Index.getInitialProps = async () => {
     .map(example => {
       const short = example.substring(0, example.length - 3);
       const name = short
-        .replace("-", " ")
-        .replace(/(^|\s)\S/g, l => l.toUpperCase());
+        .replace("-", " ");
       return {
         name,
         slug: `examples/${short}`
