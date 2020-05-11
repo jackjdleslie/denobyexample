@@ -30,7 +30,7 @@ const Index = ({ examples = [] }) => (
     <p>
       <i>Deno by Example</i>
       {' '}
-      is a hands-on introduction to JavaScript with
+      is a hands-on introduction to
       Deno using annotated example programs. Check out the
       {' '}
       <Link href="examples/hello-world">
