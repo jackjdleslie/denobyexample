@@ -4,13 +4,13 @@ import Link from 'next/link';
 import { Layout } from '../components';
 
 const code = `// created-by.js
-console.log(process.env.NAME);
-console.log(process.env.URL);
+import { config } from "https://deno.land/x/dotenv/mod.ts";
+const { NAME, URL } = config();
+console.log(NAME, URL);
 `;
 
-const output = `$ deno run created-by.js
-Jack Leslie
-jackleslie.dev
+const output = `$ deno run --allow-read created-by.js
+Jack Leslie jackleslie.dev
 `;
 
 const next = { name: 'Hello World', slug: 'examples/hello-world' };
