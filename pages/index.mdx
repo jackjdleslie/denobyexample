@@ -1,0 +1,22 @@
+---
+layout: layout
+code: |
+  // created-by.js
+  import { config } from "https://deno.land/x/dotenv/mod.ts";
+  const { NAME, URL } = config();
+  console.log(NAME, URL);
+output: |
+  $ deno run --allow-read created-by.js
+  Jack Leslie jackleslie.dev
+next:
+  name: 'Hello World'
+  slug: 'examples/hello-world'
+---
+
+[Deno](https://deno.land) is an open source [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript)
+runtime environment allowing the execution of JavaScript programs outside of the browser.
+
+_Deno by Example_ is a hands-on introduction to Deno using annotated example programs. Check out the
+[first example](examples/hello-world) or browse the full list below.
+
+- [Hello World](examples/hello-world)
